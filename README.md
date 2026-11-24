@@ -18,6 +18,28 @@ The study investigates historical gold price movements, seasonal patterns, and s
 - R Markdown
 - Google Trends
 
+## Dataset Description
+
+Three historical gold price datasets were used for different stages of the time series analysis.
+
+| Dataset | Period | Purpose |
+|---|---|---|
+| `golddata (data2).csv` | January 2018 – December 2021 | Historical trend analysis, seasonality analysis and STL decomposition |
+| `newgolddata (data3).csv` | January – June 2022 | Training dataset for ARIMA model fitting and forecasting |
+| `futuregolddata2 (data1).csv` | First 14 trading days of July 2022 | Testing dataset for evaluating forecasting accuracy against actual gold prices |
+
+### Dataset Variables
+
+- **Date:** Trading date
+- **Price:** Closing gold price
+- **Open:** Opening price
+- **High:** Highest trading price
+- **Low:** Lowest trading price
+- **Vol.:** Trading volume
+- **Change %:** Percentage change in price
+
+The Date and Price variables were the primary variables used for time series analysis and forecasting.
+
 ### R Packages
 - ggplot2
 - dplyr
